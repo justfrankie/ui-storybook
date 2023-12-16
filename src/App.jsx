@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import './App.css'
-import MainWindow from './components/MainWindow.jsx'
-import SideNavigation from './components/SideNavigation.jsx'
-import TopNavigationBar from './components/TopNavigationBar.jsx'
+import MainWindow from './components/layout/MainWindow.jsx'
+import SideNavigation from './components/layout/SideNavigation.jsx'
+import TopNavigationBar from './components/layout/TopNavigationBar.jsx'
 import Buttons from './components/ui-components/Buttons.jsx'
 import Home from './components/ui-components/Home.jsx'
+import InputForm from './components/ui-components/modules/InputForm/InputForm.jsx'
 
 const styles = {
   mainContainer: {
@@ -39,6 +40,7 @@ const styles = {
 const navItems = [
   { id: 'home', name: 'Home', Component: () => <Home /> },
   { id: 'button', name: 'Button', Component: () => <Buttons /> },
+  { id: 'input-form', name: 'InputForm', Component: () => <InputForm /> },
   { id: 'menu', name: 'Menu', Component: () => null },
   { id: 'searchbar', name: 'Search Bar', Component: () => null },
   { id: 'navigation', name: 'Navigation', Component: () => null },
