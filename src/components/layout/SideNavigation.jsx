@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const SideNavigation = ({ setCurrentComponent, navItems }) => {
   const handleClick = (newData) => {
-    setCurrentComponent((prevComponent) => ({ ...prevComponent, ...newData }))
-  }
+    setCurrentComponent((prevComponent) => ({ ...prevComponent, ...newData }));
+  };
 
   return (
     <div style={styles.container}>
@@ -23,29 +23,29 @@ const SideNavigation = ({ setCurrentComponent, navItems }) => {
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
 const styles = {
   container: {
-    padding: '10px',
+    padding: "10px",
   },
   navList: {
-    listStyle: 'none',
+    listStyle: "none",
     padding: 0,
     margin: 0,
   },
   navItem: {
-    padding: '8px',
-    borderBottom: '1px solid #ddd',
-    cursor: 'pointer',
+    padding: "8px",
+    borderBottom: "1px solid #ddd",
+    cursor: "pointer",
   },
   navItemWithBorder: {
-    padding: '8px',
-    borderBottom: '1px solid #ddd',
-    cursor: 'pointer',
-    borderRight: '1px solid #ddd',
+    padding: "8px",
+    borderBottom: "1px solid #ddd",
+    cursor: "pointer",
+    borderRight: "1px solid #ddd",
   },
-}
+};
 
-export default SideNavigation
+export default SideNavigation;

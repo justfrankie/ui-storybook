@@ -1,6 +1,6 @@
-import React from 'react'
-import packageJson from '../../../package.json'
-const topListNav = ['Home', 'Docs', 'GitHub']
+import React from "react";
+import packageJson from "../../../package.json";
+const topListNav = ["Home", "Docs", "GitHub"];
 
 const TopNavigationBar = () => {
   return (
@@ -29,58 +29,58 @@ const TopNavigationBar = () => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const styles = {
   container: {
-    backgroundColor: '#1a2b34',
-    color: '#fff',
-    padding: '10px',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    backgroundColor: "#1a2b34",
+    color: "#fff",
+    padding: "10px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
   leftSection: {
-    display: 'flex',
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
   },
   logoContainer: {
-    display: 'flex',
-    alignItems: 'center',
-    marginRight: '20px',
+    display: "flex",
+    alignItems: "center",
+    marginRight: "20px",
   },
   iconPlaceholder: {
-    fontSize: '24px',
-    marginRight: '8px',
+    fontSize: "24px",
+    marginRight: "8px",
   },
   heroTitle: {
-    fontSize: '18px',
-    fontWeight: 'bold',
+    fontSize: "18px",
+    fontWeight: "bold",
   },
   versionNumber: {
-    fontSize: '14px',
+    fontSize: "14px",
   },
   rightSection: {
-    display: 'flex',
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
   },
   searchBar: {
-    padding: '8px',
-    marginRight: '10px',
-    borderRadius: '4px',
-    border: 'none',
+    padding: "8px",
+    marginRight: "10px",
+    borderRadius: "4px",
+    border: "none",
   },
   githubNav: {
-    listStyle: 'none',
+    listStyle: "none",
     padding: 0,
     margin: 0,
-    display: 'flex',
+    display: "flex",
   },
   githubNavItem: {
-    margin: '0 8px',
-    cursor: 'pointer',
+    margin: "0 8px",
+    cursor: "pointer",
   },
-}
+};
 
-export default TopNavigationBar
+export default TopNavigationBar;
