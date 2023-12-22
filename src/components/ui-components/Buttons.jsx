@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Buttons = () => {
   return (
@@ -7,7 +7,7 @@ const Buttons = () => {
       <button>Style 2</button>
       <button>Style 3</button>
     </div>
-  )
-}
+  );
+};
 
-export default Buttons
+export default Buttons;

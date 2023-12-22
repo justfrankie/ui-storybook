@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import InputBar from "./sub-components/InputBar";
 import InputList from "./sub-components/InputList";
 
- const InputForm = () => {
+const InputForm = () => {
   const [newTask, setNewTask] = useState({});
   const handleChange = ({ target }) => {
     const { name, value } = target;
@@ -18,9 +18,7 @@ import InputList from "./sub-components/InputList";
     setNewTask({});
   };
   const handleDelete = (taskIdToRemove) => {
-    setAllTasks((prev) => prev.filter(
-      (task) => task.id !== taskIdToRemove
-    ));
+    setAllTasks((prev) => prev.filter((task) => task.id !== taskIdToRemove));
   };
   const handleReset = (event) => {
     event.preventDefault();
@@ -28,18 +26,21 @@ import InputList from "./sub-components/InputList";
     setNewTask({});
   };
 
-
   return (
-    <div style={{width: '500px'}}>
+    <div style={{ width: "500px" }}>
       <InputBar
         newTask={newTask}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         handleReset={handleReset}
       />
-      <InputList allTasks={allTasks} handleReset={handleReset} handleDelete={handleDelete}/>
+      <InputList
+        allTasks={allTasks}
+        handleReset={handleReset}
+        handleDelete={handleDelete}
+      />
     </div>
   );
-}
+};
 
-export default InputForm
+export default InputForm;
