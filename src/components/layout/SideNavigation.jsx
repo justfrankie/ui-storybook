@@ -21,7 +21,7 @@ const SideNavigation = ({ setCurrentComponent, navItems }) => {
             }
             onClick={() => handleClick(item)}
           >
-            {item.name}
+            <span className={styles.navItemNameText}>{item.name}</span>
           </li>
         ))}
       </ul>

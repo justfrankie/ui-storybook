@@ -26,3 +26,9 @@
 .navItemWithBorder:hover {
   background-color: #1a2b3426;
 }
+
+.navItemNameText {
+  font-size: 0.9rem;
+  margin-left: 5px;
+  padding: 5px;
+}
