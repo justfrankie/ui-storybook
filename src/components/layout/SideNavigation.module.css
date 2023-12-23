@@ -1,0 +1,29 @@
+.container {
+  padding: 10px;
+  background-color: #f2f6fd;
+  border-radius: 8px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navItemWithBorder {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navItem:hover,
+.navItemWithBorder:hover {
+  background-color: #1a2b3426;
+}
