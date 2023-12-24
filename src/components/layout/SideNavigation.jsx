@@ -1,4 +1,7 @@
+// SideNavigation.js
+
 import React from "react";
+import styles from "./SideNavigation.module.css";
 
 const SideNavigation = ({ setCurrentComponent, navItems }) => {
   const handleClick = (newData) => {
@@ -6,46 +9,24 @@ const SideNavigation = ({ setCurrentComponent, navItems }) => {
   };
 
   return (
-    <div style={styles.container}>
-      <ul style={styles.navList}>
+    <div className={styles.container}>
+      <ul className={styles.navList}>
         {navItems.map((item, index) => (
           <li
             key={index}
-            style={
-              index < navItems.length - 1
-                ? styles.navItemWithBorder
-                : styles.navItem
+            className={
+              index < navItems.length
+                ? `${styles.navItemWithBorder} ${styles.hoverEffect}`
+                : `${styles.navItem} ${styles.hoverEffect}`
             }
             onClick={() => handleClick(item)}
           >
-            {item.name}
+            <span className={styles.navItemNameText}>{item.name}</span>
           </li>
         ))}
       </ul>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    padding: "10px",
-  },
-  navList: {
-    listStyle: "none",
-    padding: 0,
-    margin: 0,
-  },
-  navItem: {
-    padding: "8px",
-    borderBottom: "1px solid #ddd",
-    cursor: "pointer",
-  },
-  navItemWithBorder: {
-    padding: "8px",
-    borderBottom: "1px solid #ddd",
-    cursor: "pointer",
-    borderRight: "1px solid #ddd",
-  },
 };
 
 export default SideNavigation;
