@@ -1,12 +1,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/bookicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+      name="UI components in a storybook design"
+      content="Reusable and previewable web components"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -23,7 +22,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>UI Storybook</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -38,12 +37,14 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>window.addEventListener('error', function (e) {
-      console.error(e.message);
-         // prevent React's listener from firing
-      e.stopImmediatePropagation();
+    <script>
+      window.addEventListener("error", function (e) {
+        console.error(e.message);
+        // prevent React's listener from firing
+        e.stopImmediatePropagation();
         // prevent the browser's console error message
-      e.preventDefault();
-   });</script>
+        e.preventDefault();
+      });
+    </script>
   </body>
 </html>

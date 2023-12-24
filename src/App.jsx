@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import MainWindow from "./components/layout/MainWindow.jsx";
 import SideNavigation from "./components/layout/SideNavigation.jsx";
 import TopNavigationBar from "./components/layout/TopNavigationBar.jsx";
