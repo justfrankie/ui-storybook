@@ -6,7 +6,7 @@ import styles from "./SideNavigation.module.css";
 const SideNavigation = ({
   currentComponent,
   setCurrentComponent,
-  navItems,
+  componentsList,
 }) => {
   const handleClick = (newData) => {
     setCurrentComponent((prevComponent) => ({ ...prevComponent, ...newData }));
@@ -15,7 +15,7 @@ const SideNavigation = ({
   return (
     <div className={styles.container}>
       <ul className={styles.navList}>
-        {navItems.map((item, index) => (
+        {componentsList.map((item, index) => (
           <li
             key={index}
             className={`${styles.navItem} ${styles.hoverEffect} ${

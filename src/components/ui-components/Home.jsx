@@ -42,26 +42,6 @@ const FeatureItem = styled.li`
   text-align: center;
 `;
 
-const ComponentShowcase = styled.section`
-  text-align: center;
-`;
-
-const ComponentTitle = styled.h2`
-  font-size: 20px;
-  margin-bottom: 20px;
-`;
-
-const ComponentContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-`;
-
-const ComponentBox = styled.div`
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin: 10px;
-`;
-
 const Home = () => {
   return (
     <HomeContainer>
@@ -81,16 +61,6 @@ const Home = () => {
           <FeatureItem>Previewable Components</FeatureItem>
         </FeatureList>
       </FeatureSection>
-
-      {/* Component Showcase */}
-      <ComponentShowcase>
-        <ComponentTitle>Featured Component Showcase</ComponentTitle>
-        <ComponentContainer>
-          <ComponentBox>Component 1</ComponentBox>
-          <ComponentBox>Component 2</ComponentBox>
-          <ComponentBox>Component 3</ComponentBox>
-        </ComponentContainer>
-      </ComponentShowcase>
     </HomeContainer>
   );
 };

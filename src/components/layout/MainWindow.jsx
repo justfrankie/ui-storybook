@@ -1,7 +1,7 @@
 import React from "react";
 
-const MainWindow = ({ component }) => {
-  const { id, name, Component } = component;
+const MainWindow = ({ currentComponent }) => {
+  const { id, name, Component } = currentComponent;
 
   return (
     <div style={styles.container}>

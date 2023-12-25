@@ -3,10 +3,7 @@ import "./App.css";
 import MainWindow from "./components/layout/MainWindow.jsx";
 import SideNavigation from "./components/layout/SideNavigation.jsx";
 import TopNavigationBar from "./components/layout/TopNavigationBar.jsx";
-import Buttons from "./components/ui-components/Buttons.jsx";
-import Home from "./components/ui-components/Home.jsx";
-import InputForm from "./components/ui-components/modules/InputForm/InputForm.jsx";
-import LoadingSpinner from "./components/ui-components/LoadingSpinner.jsx";
+import componentsList from "./componentsList.jsx";
 
 const styles = {
   mainContainer: {
@@ -24,8 +21,8 @@ const styles = {
     width: "20%",
     height: "100vh",
   },
-  navItemsContainer: {},
-  navItems: {
+  componentsListContainer: {},
+  componentsList: {
     listStyle: "none",
     borderTop: "1px solid gray",
     borderBottom: "1px solid gray",
@@ -38,24 +35,14 @@ const styles = {
   },
 };
 
-const navItems = [
-  { id: "home", name: "Home", Component: () => <Home /> },
-  { id: "button", name: "Button", Component: () => <Buttons /> },
-  { id: "input-form", name: "Input Form", Component: () => <InputForm /> },
-  {
-    id: "loading-spinner",
-    name: "Loading Spinner",
-    Component: () => <LoadingSpinner />,
-  },
-];
-
 const App = () => {
-  const [currentComponent, setCurrentComponent] = useState(navItems[0]);
+  const [currentComponent, setCurrentComponent] = useState(componentsList[0]);
+
   return (
     <div style={styles.mainContainer}>
       <div style={styles.topNavContainer}>
         <TopNavigationBar
-          navItems={navItems}
+          componentsList={componentsList}
           currentComponent={currentComponent}
           setCurrentComponent={setCurrentComponent}
         />
@@ -63,14 +50,14 @@ const App = () => {
       <div style={styles.bottomContainer}>
         <nav style={styles.sideNav}>
           <SideNavigation
-            navItems={navItems}
+            componentsList={componentsList}
             currentComponent={currentComponent}
             component={currentComponent}
             setCurrentComponent={setCurrentComponent}
           />
         </nav>
         <div style={styles.mainWindow}>
-          <MainWindow component={currentComponent} />
+          <MainWindow currentComponent={currentComponent} />
         </div>
       </div>
     </div>
