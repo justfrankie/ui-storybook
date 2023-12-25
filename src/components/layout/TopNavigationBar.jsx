@@ -129,6 +129,7 @@ const styles = {
   },
   versionNumber: {
     fontSize: "14px",
+    color: "rgb(226, 81, 119)",
   },
   rightSection: {
     display: "flex",

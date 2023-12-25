@@ -11,19 +11,11 @@
 
 .navItem {
   padding: 8px;
-  border-bottom: 1px solid #ddd;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.navItemWithBorder {
-  padding: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.navItem:hover,
-.navItemWithBorder:hover {
+.navItem:hover {
   background-color: rgb(226, 81, 119);
   color: white;
 }
@@ -32,4 +24,9 @@
   font-size: 0.9rem;
   margin-left: 5px;
   padding: 5px;
+}
+
+.selectedNav {
+  color: white;
+  background-color: rgb(226, 81, 119);
 }

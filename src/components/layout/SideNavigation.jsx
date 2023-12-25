@@ -3,7 +3,11 @@
 import React from "react";
 import styles from "./SideNavigation.module.css";
 
-const SideNavigation = ({ setCurrentComponent, navItems }) => {
+const SideNavigation = ({
+  currentComponent,
+  setCurrentComponent,
+  navItems,
+}) => {
   const handleClick = (newData) => {
     setCurrentComponent((prevComponent) => ({ ...prevComponent, ...newData }));
   };
@@ -14,11 +18,9 @@ const SideNavigation = ({ setCurrentComponent, navItems }) => {
         {navItems.map((item, index) => (
           <li
             key={index}
-            className={
-              index < navItems.length
-                ? `${styles.navItemWithBorder} ${styles.hoverEffect}`
-                : `${styles.navItem} ${styles.hoverEffect}`
-            }
+            className={`${styles.navItem} ${styles.hoverEffect} ${
+              item.id === currentComponent.id && styles.selectedNav
+            }`}
             onClick={() => handleClick(item)}
           >
             <span className={styles.navItemNameText}>{item.name}</span>

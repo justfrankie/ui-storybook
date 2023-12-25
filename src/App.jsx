@@ -64,6 +64,7 @@ const App = () => {
         <nav style={styles.sideNav}>
           <SideNavigation
             navItems={navItems}
+            currentComponent={currentComponent}
             component={currentComponent}
             setCurrentComponent={setCurrentComponent}
           />
