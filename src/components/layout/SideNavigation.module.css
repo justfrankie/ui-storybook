@@ -24,7 +24,8 @@
 
 .navItem:hover,
 .navItemWithBorder:hover {
-  background-color: #1a2b3426;
+  background-color: rgb(226, 81, 119);
+  color: white;
 }
 
 .navItemNameText {

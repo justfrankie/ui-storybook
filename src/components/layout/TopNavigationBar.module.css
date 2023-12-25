@@ -1,6 +1,7 @@
 .searchBarContainer {
   width: 200px;
 }
+
 .searchResultsInput {
   padding: 8px;
   margin-right: 10px;
@@ -8,6 +9,10 @@
   border: none;
   position: relative;
   width: 100%;
+}
+
+.searchResultsInput:focus {
+  outline: none;
 }
 
 .searchResults {
@@ -21,10 +26,6 @@
   margin: 0 !important;
   position: absolute;
   width: 200px;
-}
-
-.searchResultsContainer:focus-visible {
-  border: none;
 }
 
 .searchBarResultsActive {

@@ -1,0 +1,34 @@
+.styleOne {
+  border: none;
+  padding: 10px 20px;
+  margin: 5px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.primary {
+  background-color: rgb(26, 43, 50);
+}
+
+.primary:hover {
+  background-color: rgb(63, 90, 102);
+}
+
+.secondary {
+  background-color: #f2f6fd;
+  color: rgb(26, 43, 50);
+}
+
+.secondary:hover {
+  background-color: rgb(129, 152, 206);
+  color: white;
+}
+
+.accent {
+  background-color: rgb(226, 81, 119);
+}
+
+.accent:hover {
+  background-color: rgb(226, 147, 168);
+}
