@@ -40,24 +40,24 @@ const styles = {
 const navItems = [
   { id: "home", name: "Home", Component: () => <Home /> },
   { id: "button", name: "Button", Component: () => <Buttons /> },
-  { id: "input-form", name: "InputForm", Component: () => <InputForm /> },
+  { id: "input-form", name: "Input Form", Component: () => <InputForm /> },
   {
     id: "loading-spinner",
     name: "Loading Spinner",
     Component: () => <LoadingSpinner />,
   },
-  { id: "menu", name: "Menu", Component: () => null },
-  { id: "searchbar", name: "Search Bar", Component: () => null },
-  { id: "navigation", name: "Navigation", Component: () => null },
 ];
 
 const App = () => {
   const [currentComponent, setCurrentComponent] = useState(navItems[0]);
-
   return (
     <div style={styles.mainContainer}>
       <div style={styles.topNavContainer}>
-        <TopNavigationBar />
+        <TopNavigationBar
+          navItems={navItems}
+          currentComponent={currentComponent}
+          setCurrentComponent={setCurrentComponent}
+        />
       </div>
       <div style={styles.bottomContainer}>
         <nav style={styles.sideNav}>
