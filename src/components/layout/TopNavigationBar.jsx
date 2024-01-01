@@ -1,69 +1,12 @@
 import React, { useState } from "react";
 import packageJson from "../../../package.json";
-import moduleStyles from "./TopNavigationBar.module.css";
+import SearchBar from "../ui-components/SearchBar";
 const topListNav = ["Home", "Docs", "GitHub"];
-
-const SearchBar = ({
-  setSearchQuery,
-  setCurrentComponent,
-  searchQuery,
-  navItems,
-}) => {
-  const [searchResultsOpen, setSearchResultsOpen] = useState(false);
-  const handleChange = (e) => {
-    setSearchQuery(e.target.value);
-  };
-
-  const handleClick = (newData) => {
-    setSearchResultsOpen(false);
-    setSearchQuery("");
-    setCurrentComponent((prevComponent) => ({ ...prevComponent, ...newData }));
-  };
-
-  return (
-    <div className={moduleStyles.searchBarContainer}>
-      <input
-        type="text"
-        name="search"
-        value={searchQuery}
-        placeholder="Search"
-        className={`${moduleStyles.searchResultsInput} ${
-          searchResultsOpen && moduleStyles.searchBarResultsActive
-        }`}
-        onChange={(e) => handleChange(e)}
-      />
-      {searchQuery.length > 0 && (
-        <div className={moduleStyles.searchResults}>
-          <ul className={moduleStyles.searchResultsContainer}>
-            {navItems
-              .filter((item) => {
-                const itemMatchFound = item.name
-                  .toLowerCase()
-                  .includes(searchQuery.toLowerCase());
-                if (!searchResultsOpen && itemMatchFound)
-                  setSearchResultsOpen(true);
-                return itemMatchFound;
-              })
-              .map((item, index) => (
-                <li
-                  className={moduleStyles.searchResultItem}
-                  key={index}
-                  onClick={() => handleClick(item)}
-                >
-                  {item.name}
-                </li>
-              ))}
-          </ul>
-        </div>
-      )}
-    </div>
-  );
-};
 
 const TopNavigationBar = ({
   currentComponent,
   setCurrentComponent,
-  navItems,
+  componentsList,
 }) => {
   const [searchQuery, setSearchQuery] = useState("");
   return (
@@ -86,7 +29,7 @@ const TopNavigationBar = ({
           setSearchQuery={setSearchQuery}
           searchQuery={searchQuery}
           setCurrentComponent={setCurrentComponent}
-          navItems={navItems}
+          componentsList={componentsList}
         />
         {/* GitHub Nav List Items */}
         <ul style={styles.githubNav}>
@@ -129,6 +72,7 @@ const styles = {
   },
   versionNumber: {
     fontSize: "14px",
+    color: "rgb(226, 81, 119)",
   },
   rightSection: {
     display: "flex",
