@@ -3,6 +3,7 @@ import MainWindow from "./components/layout/MainWindow.jsx";
 import SideNavigation from "./components/layout/SideNavigation.jsx";
 import TopNavigationBar from "./components/layout/TopNavigationBar.jsx";
 import componentsList from "./componentsList.jsx";
+import "./App.css";
 
 const styles = {
   mainContainer: {
