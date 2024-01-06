@@ -2,11 +2,33 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const Error404 = () => {
+  return <h1>404 Error not found!</h1>;
+};
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    errorElement: <Error404 />,
+    element: <App />,
+  },
+  {
+    path: "/home",
+    errorElement: <Error404 />,
+    element: <App />,
+  },
+  {
+    path: "/docs",
+    element: <div>hi</div>,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
