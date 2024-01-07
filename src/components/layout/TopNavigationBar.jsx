@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import packageJson from "../../../package.json";
 import SearchBar from "../ui-components/SearchBar";
-import { Link } from "react-router-dom";
-import navStyles from "./TopNavigationBar.module.css"; // Import the CSS module
-
 const topListNav = ["Home", "Docs", "GitHub"];
 
 const TopNavigationBar = ({
@@ -13,19 +10,19 @@ const TopNavigationBar = ({
 }) => {
   const [searchQuery, setSearchQuery] = useState("");
   return (
-    <div className={navStyles.container}>
-      <div className={navStyles.leftSection}>
-        <div className={navStyles.logoContainer}>
+    <div style={styles.container}>
+      <div style={styles.leftSection}>
+        <div style={styles.logoContainer}>
           {/* Icon Placeholder */}
-          <span className={navStyles.iconPlaceholder}>📚</span>
+          <span style={styles.iconPlaceholder}>📚</span>
           {/* Hero Title */}
-          <span className={navStyles.heroTitle}>UI Storybook</span>
+          <span style={styles.heroTitle}>UI Storybook</span>
         </div>
         {/* Version Number */}
-        <span className={navStyles.versionNumber}>v{packageJson.version}</span>
+        <span style={styles.versionNumber}>v{packageJson.version}</span>
       </div>
 
-      <div className={navStyles.rightSection}>
+      <div style={styles.rightSection}>
         {/* Search Bar */}
         <SearchBar
           currentComponent={currentComponent}
@@ -35,16 +32,63 @@ const TopNavigationBar = ({
           componentsList={componentsList}
         />
         {/* GitHub Nav List Items */}
-        <ul className={navStyles.githubNav}>
+        <ul style={styles.githubNav}>
           {topListNav.map((item, index) => (
-            <Link key={index} to={`/${item.toLowerCase()}`}>
-              <li className={navStyles.githubNavItem}>{item}</li>
-            </Link>
+            <li key={index} style={styles.githubNavItem}>
+              {item}
+            </li>
           ))}
         </ul>
       </div>
     </div>
   );
+};
+
+const styles = {
+  container: {
+    backgroundColor: "#1a2b34",
+    color: "#fff",
+    padding: "10px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  leftSection: {
+    display: "flex",
+    alignItems: "center",
+  },
+  logoContainer: {
+    display: "flex",
+    alignItems: "center",
+    marginRight: "20px",
+  },
+  iconPlaceholder: {
+    fontSize: "24px",
+    marginRight: "8px",
+  },
+  heroTitle: {
+    fontSize: "18px",
+    fontWeight: "bold",
+  },
+  versionNumber: {
+    fontSize: "14px",
+    color: "rgb(226, 81, 119)",
+  },
+  rightSection: {
+    display: "flex",
+    alignItems: "center",
+  },
+
+  githubNav: {
+    listStyle: "none",
+    padding: 0,
+    margin: 0,
+    display: "flex",
+  },
+  githubNavItem: {
+    margin: "0 8px",
+    cursor: "pointer",
+  },
 };
 
 export default TopNavigationBar;
