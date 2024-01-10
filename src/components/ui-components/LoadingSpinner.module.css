@@ -4,8 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4vh;
-  margin-top: 100px;
+}
+
+.loading-spinner-text-container {
+  display: block;
+  text-align: center;
 }
 
 .loading-spinner {
@@ -15,6 +18,15 @@
   width: 50px;
   height: 50px;
   animation: spin 1s linear infinite;
+  margin-top: 20px;
+}
+
+.small {
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10px;
 }
 
 @keyframes spin {

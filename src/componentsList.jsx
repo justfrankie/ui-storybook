@@ -1,9 +1,9 @@
 import React from "react";
 import Home from "./components/ui-components/Home";
 import InputForm from "./components/ui-components/modules/InputForm/InputForm";
-import LoadingSpinner from "./components/ui-components/LoadingSpinner";
 import SearchBar from "./components/ui-components/SearchBar";
 import ButtonList from "./components/ui-components/modules/ButtonLists/ButtonLists";
+import LoadingSpinnerList from "./components/ui-components/modules/LoadingSpinnerList/LoadingSpinnerList";
 
 const componentsList = [
   { id: "home", name: "Home", Component: () => <Home /> },
@@ -12,7 +12,7 @@ const componentsList = [
   {
     id: "loading-spinner",
     name: "Loading Spinner",
-    Component: () => <LoadingSpinner />,
+    Component: () => <LoadingSpinnerList />,
   },
   {
     id: "search-bar",
