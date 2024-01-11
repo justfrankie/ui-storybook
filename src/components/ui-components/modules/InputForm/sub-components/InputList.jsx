@@ -1,4 +1,7 @@
 import React from "react";
+
+// TODO convert this to modules styles
+
 const styles = {
   ul: {
     listStyle: "none",

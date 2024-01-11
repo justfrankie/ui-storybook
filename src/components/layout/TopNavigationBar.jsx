@@ -44,6 +44,7 @@ const TopNavigationBar = ({
   );
 };
 
+// TODO convert this to modules styles
 const styles = {
   container: {
     backgroundColor: "#1a2b34",
@@ -71,7 +72,7 @@ const styles = {
     fontWeight: "bold",
   },
   versionNumber: {
-    fontSize: "14px",
+    fontSize: "12px",
     color: "rgb(226, 81, 119)",
   },
   rightSection: {

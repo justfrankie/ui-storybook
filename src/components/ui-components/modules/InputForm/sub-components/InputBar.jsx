@@ -48,6 +48,8 @@ const styles = {
   },
 };
 
+// TODO convert this to modules styles
+
 export default function InputBar({
   newTask,
   handleChange,
