@@ -11,6 +11,8 @@ const MainWindow = ({ currentComponent }) => {
   );
 };
 
+// TODO convert this to modules styles
+
 const styles = {
   container: {
     padding: "5px",

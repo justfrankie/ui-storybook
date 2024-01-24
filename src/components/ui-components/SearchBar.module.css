@@ -9,14 +9,11 @@
   border: none;
   position: relative;
   width: 100%;
-  color: #e25177;
-  font-weight: 600;
 }
 
 .searchResultsInput::placeholder {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  color: #e25177;
 }
 
 .searchResultsInput:focus {

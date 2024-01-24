@@ -1,6 +1,5 @@
 import React from "react";
 import loadingStyles from "./LoadingSpinner.module.css";
-// TODO: make this more reusable with different styles: images, icon, text, etc
 
 const LoadingSpinner = ({ text, size }) => {
   return (
