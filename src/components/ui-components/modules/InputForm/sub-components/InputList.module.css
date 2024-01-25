@@ -1,0 +1,45 @@
+.ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #1a2b34;
+  border-radius: 5px;
+  margin: 8px 0;
+  padding: 10px;
+}
+
+.content {
+  flex: 1;
+}
+
+.h2 {
+  background-color: #f2f8fd;
+  margin: 0;
+  padding: 4px;
+}
+
+.p {
+  margin: 8px;
+}
+
+.button {
+  background: transparent;
+  border: 0;
+  padding: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonHover:hover {
+  box-shadow: 0 0 1px black;
+}
