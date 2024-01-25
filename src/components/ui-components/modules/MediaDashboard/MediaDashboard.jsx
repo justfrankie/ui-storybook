@@ -3,6 +3,21 @@ import styles from "./styles.module.css";
 import { get } from "./mockBackend/fetch";
 import LoadingSpinner from "../../LoadingSpinner";
 
+const AdBanner = ({ adClient, adSlot, adFormat, isResponsive }) => {
+  useEffect(() => {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }, []);
+
+  return (
+    <div className={styles.mockAdBanner}>
+      <h2>Mock Ad Banner</h2>
+      <p>Ad Client: {adClient}</p>
+      <p>Ad Slot: {adSlot}</p>
+      <p>Ad Format: {adFormat}</p>
+      <p>Is Responsive: {isResponsive.toString()}</p>
+    </div>
+  );
+};
 export default function MediaDashboard() {
   const [newsFeed, setNewsFeed] = useState(null);
   useEffect(() => {
@@ -45,22 +60,30 @@ export default function MediaDashboard() {
             </article>
           ))}
         </section>
-        <aside>
-          <ul>
-            {friends
-              .sort((a, b) => (a.isOnline && !b.isOnline ? -1 : 0))
-              .map(({ id, name, isOnline }) => (
-                <li
-                  key={id}
-                  className={`${styles.friendListItem} ${
-                    isOnline ? styles.online : styles.offline
-                  }`}
-                >
-                  {name}
-                </li>
-              ))}
-          </ul>
-        </aside>
+        <div>
+          <aside>
+            <ul>
+              {friends
+                .sort((a, b) => (a.isOnline && !b.isOnline ? -1 : 0))
+                .map(({ id, name, isOnline }) => (
+                  <li
+                    key={id}
+                    className={`${styles.friendListItem} ${
+                      isOnline ? styles.online : styles.offline
+                    }`}
+                  >
+                    {name}
+                  </li>
+                ))}
+            </ul>
+            <AdBanner
+              adClient="ca-pub-XXXXXXXXXXXXXXXX"
+              adSlot="1234567890"
+              adFormat="auto"
+              isResponsive={true}
+            />
+          </aside>
+        </div>
       </div>
     </div>
   );
