@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import TaskManager from "./components/ui-components/modules/TaskManager/TaskManager";
+import "./global.css";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     path: "/ui-storybook",
     element: <App />,
     errorElement: <h1>Error 404 not found</h1>,
+  },
+  {
+    path: "/todos",
+    element: <TaskManager />,
   },
 ]);
 

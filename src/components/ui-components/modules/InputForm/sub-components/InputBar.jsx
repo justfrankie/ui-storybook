@@ -1,5 +1,6 @@
 import React from "react";
 import inputBarStyles from "./InputBar.module.css";
+import Button from "../../../Button";
 
 export default function InputBar({
   newTask,
@@ -28,12 +29,8 @@ export default function InputBar({
         onChange={handleChange}
       />
       <span className={inputBarStyles.buttonContainer}>
-        <button className={inputBarStyles.button} type="submit">
-          Add Task
-        </button>
-        <button className={inputBarStyles.resetButton} type="reset">
-          Clear All
-        </button>
+        <Button text="Add Task" theme="primary" />
+        <Button text="Clear All" theme="secondary" />
       </span>
     </form>
   );
