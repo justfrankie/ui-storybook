@@ -4,6 +4,7 @@ import InputForm from "./components/ui-components/modules/InputForm/InputForm";
 import SearchBar from "./components/ui-components/SearchBar";
 import ButtonList from "./components/ui-components/modules/ButtonLists/ButtonLists";
 import LoadingSpinnerList from "./components/ui-components/modules/LoadingSpinnerList/LoadingSpinnerList";
+import MediaDashboard from "./components/ui-components/modules/MediaDashboard/MediaDashboard";
 
 const componentsList = [
   { id: "home", name: "Home", Component: () => <Home /> },
@@ -26,6 +27,11 @@ const componentsList = [
         componentsList={[]}
       />
     ),
+  },
+  {
+    id: "media-dashboard",
+    name: "Media Dashboard",
+    Component: () => <MediaDashboard />,
   },
 ];
 
