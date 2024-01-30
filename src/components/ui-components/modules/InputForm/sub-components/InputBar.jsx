@@ -30,7 +30,7 @@ export default function InputBar({
       />
       <span className={inputBarStyles.buttonContainer}>
         <Button text="Add Task" theme="primary" />
-        <Button text="Clear All" theme="secondary" />
+        <Button text="Clear All" theme="secondary" handleClick={handleReset} />
       </span>
     </form>
   );

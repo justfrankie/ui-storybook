@@ -27,7 +27,7 @@ const InputForm = () => {
   };
 
   return (
-    <div style={{ width: "500px" }}>
+    <div style={{ width: "500px", margin: "0 auto" }}>
       <InputBar
         newTask={newTask}
         handleChange={handleChange}
