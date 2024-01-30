@@ -4,7 +4,6 @@ import Button from "../../Button";
 const TaskList = ({ tasks, onRemove, onDone }) => {
   return (
     <div>
-      <h2>Tasks</h2>
       <ul>
         {tasks.map((task) => (
           <li key={task.id}>
