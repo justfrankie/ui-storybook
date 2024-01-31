@@ -4,7 +4,7 @@ import SearchBar from "../ui-components/SearchBar";
 import topNavStyles from "./TopNavigationBar.module.css"; // Import the CSS module
 import { Link } from "react-router-dom";
 
-const topListNav = ["Home", "Docs", "GitHub", "Todos"];
+const topListNav = ["Home", "Docs", "GitHub"];
 
 const TopNavigationBar = ({
   currentComponent,
