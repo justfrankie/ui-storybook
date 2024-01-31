@@ -3,10 +3,15 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import "./global.css";
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <App />,
+    errorElement: <h1>Error 404 not found</h1>,
+  },
+  {
+    path: "/home",
     element: <App />,
     errorElement: <h1>Error 404 not found</h1>,
   },

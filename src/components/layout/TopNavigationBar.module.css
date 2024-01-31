@@ -30,6 +30,7 @@
 
 .versionNumber {
   font-size: 12px;
+  /* TODO: make accent color a variable, can we even do that?  */
   color: rgb(226, 81, 119);
 }
 
@@ -38,14 +39,23 @@
   align-items: center;
 }
 
-.githubNav {
+.topNavItems {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-.githubNavItem {
+.topNavItem {
   margin: 0 8px;
   cursor: pointer;
+  font-size: 12px;
+}
+.topNavItem:hover {
+  color: rgb(226, 81, 119);
+}
+
+.topNavItem > a {
+  outline: none;
+  color: inherit;
 }
