@@ -29,6 +29,8 @@ const App = () => {
         <LatestComponentBanner
           handleBannerClose={handleBannerClose}
           isClosing={isClosing}
+          componentsList={componentsList}
+          setCurrentComponent={setCurrentComponent}
         />
       )}
       <div className={appStyles.bottomContainer}>

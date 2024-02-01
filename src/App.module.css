@@ -26,6 +26,7 @@ code {
 .sideNav {
   background-color: rgb(242 246 253);
   width: 25%;
+  min-width: 200px;
   height: 100vh;
 }
 
