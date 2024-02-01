@@ -1,0 +1,34 @@
+.latest-component-banner {
+  display: flex;
+  width: 100%;
+  background-color: #3c4659;
+  height: 30px;
+  font-size: 13px;
+}
+
+.latest-component-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+}
+
+.latest-component-text {
+  margin: auto;
+  color: white;
+}
+
+.latest-component-close {
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  position: absolute;
+  right: 5%;
+}
+
+.latest-component-close:hover {
+  font-weight: 700;
+}
+
+.closing {
+  animation: slideUpFadeOut 0.9s forwards;
+}

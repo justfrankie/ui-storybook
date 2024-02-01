@@ -1,6 +1,5 @@
 .container {
-  background-color: #f2f6fd;
-  border-radius: 8px;
+  margin: 10px;
 }
 
 .navList {
@@ -16,17 +15,17 @@
 }
 
 .navItem:hover {
-  background-color: rgb(226, 81, 119);
-  color: white;
+  background-color: white;
+  border-radius: 8px;
 }
 
 .navItemNameText {
-  font-size: 0.9rem;
+  font-size: 13px;
+  text-align: left;
   margin-left: 5px;
-  padding: 5px;
 }
 
 .selectedNav {
-  color: white;
-  background-color: rgb(226, 81, 119);
+  background-color: #d6e3f9;
+  border-radius: 8px;
 }
