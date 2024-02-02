@@ -5,6 +5,7 @@ import SearchBar from "./components/ui-components/SearchBar";
 import ButtonList from "./components/ui-components/modules/ButtonLists/ButtonLists";
 import LoadingSpinnerList from "./components/ui-components/modules/LoadingSpinnerList/LoadingSpinnerList";
 import MediaDashboard from "./components/ui-components/modules/MediaDashboard/MediaDashboard";
+import GridWrapper from "./components/ui-components/modules/GridWrapper/GridWrapper";
 
 const componentsList = [
   { id: "home", name: "Home", Component: () => <Home /> },
@@ -32,6 +33,11 @@ const componentsList = [
     id: "media-dashboard",
     name: "Media Dashboard",
     Component: () => <MediaDashboard />,
+  },
+  {
+    id: "grid-wrapper",
+    name: "Responsive Grid Wrapper",
+    Component: () => <GridWrapper />,
   },
 ];
 
