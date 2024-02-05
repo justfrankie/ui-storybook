@@ -1,3 +1,7 @@
+html {
+  background-color: rgb(242 246 253);
+}
+
 a:visited,
 a:link {
   color: inherit;

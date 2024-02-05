@@ -13,6 +13,7 @@ const SideNavigation = ({
   };
 
   return (
+    // todo: this nav might not be needed
     <div className={styles.container}>
       <ul className={styles.navList}>
         {componentsList.map((item, index) => (
@@ -23,7 +24,7 @@ const SideNavigation = ({
             }`}
             onClick={() => handleClick(item)}
           >
-            <span className={styles.navItemNameText}>{item.name}</span>
+            <div className={styles.navItemNameText}>{item.name}</div>
           </li>
         ))}
       </ul>
