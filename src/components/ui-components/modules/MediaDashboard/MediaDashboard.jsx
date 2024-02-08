@@ -51,7 +51,7 @@ export default function MediaDashboard() {
         ))}
       </nav>
       <div className={styles.content}>
-        <section>
+        <div>
           {newsFeed.map(({ id, title, message, imgSrc }) => (
             <article key={id} className={styles.newsArticle}>
               <h3>{title}</h3>
@@ -59,7 +59,7 @@ export default function MediaDashboard() {
               <img src={imgSrc} alt="" />
             </article>
           ))}
-        </section>
+        </div>
         <div>
           <aside>
             <ul>
