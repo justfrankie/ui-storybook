@@ -8,11 +8,11 @@ const HomeContainer = styled.div`
 const WelcomeSection = styled.div`
   flex: 1;
   max-width: 600px;
+  margin: 10px auto;
 `;
 
 const Heading = styled.h1`
   font-size: 28px;
-  margin: 10px auto;
 `;
 
 const Description = styled.p`
