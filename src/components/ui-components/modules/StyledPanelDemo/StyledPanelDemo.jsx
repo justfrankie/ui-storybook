@@ -20,7 +20,7 @@ const StyledPanelDemo = () => {
           </li>
         ))}
       </ul>
-      <div style={{ margin: "30px auto 0 auto" }}>
+      <div style={{ margin: "30px auto 0px auto", width: "300px" }}>
         <StyledPanel>
           <div style={{ margin: "20px auto" }}>
             <h1>Lorem Ipsum?</h1>
