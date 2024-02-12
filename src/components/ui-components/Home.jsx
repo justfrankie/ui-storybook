@@ -13,6 +13,7 @@ const WelcomeSection = styled.div`
 
 const Heading = styled.h1`
   font-size: 28px;
+  margin: 10px auto;
 `;
 
 const Description = styled.p`
