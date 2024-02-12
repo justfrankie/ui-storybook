@@ -36,8 +36,6 @@ const names = [
   "Zahara",
 ];
 
-// source for names: https://www.mother.ly/life/28-baby-names-that-bridge-cultures-arya-to-zahara
-
 const getNewsItem = () => ({
   id: getRandomId(),
   title: "Title Placeholder",

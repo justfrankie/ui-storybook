@@ -1,5 +1,3 @@
-// SideNavigation.js
-
 import React from "react";
 import styles from "./SideNavigation.module.css";
 
@@ -13,7 +11,6 @@ const SideNavigation = ({
   };
 
   return (
-    // todo: this nav might not be needed
     <div className={styles.container}>
       <ul className={styles.navList}>
         {componentsList.map((item, index) => (

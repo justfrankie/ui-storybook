@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import packageJson from "../../../../package.json";
 import SearchBar from "../../ui-components/SearchBar";
-import topNavStyles from "./TopNavigationBar.module.css"; // Import the CSS module
+import topNavStyles from "./TopNavigationBar.module.css";
 import { Link } from "react-router-dom";
 
 const topListNav = ["Home", "Docs", "GitHub"];
