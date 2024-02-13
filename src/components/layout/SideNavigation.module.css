@@ -1,5 +1,28 @@
 .container {
   margin: 10px;
+  width: 250px;
+  min-width: 35px;
+}
+.condenseButtonContainer {
+  display: flex;
+}
+
+.condenseButtonContainer:hover {
+  cursor: pointer;
+}
+.condenseButton {
+  margin: 5px auto 5px 0;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: inherit;
+}
+
+.condenseButton:hover {
+  background-color: white;
+}
+
+.condensed-nav {
+  width: 35px !important;
 }
 
 .navList {
@@ -10,13 +33,13 @@
 
 .navItem {
   padding: 8px;
-  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .navItem:hover {
   background-color: white;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .navItemNameText {
