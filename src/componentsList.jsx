@@ -6,6 +6,7 @@ import ButtonList from "./components/ui-components/modules/ButtonLists/ButtonLis
 import LoadingSpinnerList from "./components/ui-components/modules/LoadingSpinnerList/LoadingSpinnerList";
 import MediaDashboard from "./components/ui-components/modules/MediaDashboard/MediaDashboard";
 import GridWrapper from "./components/ui-components/modules/GridWrapper/GridWrapper";
+import StyledPanelDemo from "./components/ui-components/modules/StyledPanelDemo/StyledPanelDemo";
 
 const componentsList = [
   { id: "home", name: "Home", Component: () => <Home /> },
@@ -38,6 +39,11 @@ const componentsList = [
     id: "grid-wrapper",
     name: "Responsive Grid Wrapper",
     Component: () => <GridWrapper />,
+  },
+  {
+    id: "styled-panel",
+    name: "Styled Panels",
+    Component: () => <StyledPanelDemo />,
   },
 ];
 

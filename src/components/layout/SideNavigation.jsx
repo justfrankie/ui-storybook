@@ -1,5 +1,3 @@
-// SideNavigation.js
-
 import React, { useState } from "react";
 import sideNavStyles from "./SideNavigation.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
