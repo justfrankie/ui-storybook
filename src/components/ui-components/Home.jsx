@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import StyledPanel from "./StyledPanel";
 
 const HomeContainer = styled.div`
   justify-content: space-between;
@@ -43,6 +44,11 @@ const FeatureItem = styled.li`
 `;
 
 const Home = () => {
+  const featuredItems = [
+    "Responsive Components",
+    "Customizable Styles",
+    "Previewable Components",
+  ];
   return (
     <HomeContainer>
       <WelcomeSection>
@@ -56,9 +62,11 @@ const Home = () => {
       <FeatureSection>
         <FeatureTitle>Key Features</FeatureTitle>
         <FeatureList>
-          <FeatureItem>Responsive Components</FeatureItem>
-          <FeatureItem>Customizable Styles</FeatureItem>
-          <FeatureItem>Previewable Components</FeatureItem>
+          {featuredItems.map((item) => (
+            <StyledPanel theme="primary">
+              <FeatureItem>{item}</FeatureItem>
+            </StyledPanel>
+          ))}
         </FeatureList>
       </FeatureSection>
     </HomeContainer>
