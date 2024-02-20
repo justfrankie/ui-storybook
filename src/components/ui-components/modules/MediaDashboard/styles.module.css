@@ -22,7 +22,6 @@ body {
 }
 
 section {
-  overflow: scroll;
   max-height: 80vh;
   padding: 0 40px 0;
   margin: 20px;
