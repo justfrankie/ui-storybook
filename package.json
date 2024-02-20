@@ -1,6 +1,6 @@
 {
   "homepage": "https://justfrankie.github.io/ui-storybook",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
@@ -14,8 +14,13 @@
     "react-app-rewired": "^2.2.1",
     "react-dev-utils": "^12.0.1",
     "react-dom": "^18.2.0",
+    "react-element-to-jsx-string": "^15.0.0",
+    "react-highlight": "^0.15.0",
+    "react-jsx-parser": "^1.29.0",
     "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-syntax-highlighter-virtualized-renderer": "^1.1.0",
     "styled-components": "^6.1.1",
     "web-vitals": "^2.1.4"
   },
