@@ -62,10 +62,12 @@ const Home = () => {
       <FeatureSection>
         <FeatureTitle>Key Features</FeatureTitle>
         <FeatureList>
-          {featuredItems.map((item) => (
-            <StyledPanel theme="primary">
-              <FeatureItem>{item}</FeatureItem>
-            </StyledPanel>
+          {featuredItems.map((item, index) => (
+            <div style={{ margin: "0 20px" }}>
+              <StyledPanel theme="primary" key={index}>
+                <FeatureItem>{item}</FeatureItem>
+              </StyledPanel>
+            </div>
           ))}
         </FeatureList>
       </FeatureSection>
