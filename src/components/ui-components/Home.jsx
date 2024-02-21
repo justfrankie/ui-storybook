@@ -52,7 +52,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <WelcomeSection>
-        <Heading>Welcome to UI Storybook</Heading>
+        <Heading className="rubik-bold">Welcome to UI Storybook</Heading>
         <Description>
           Explore the features and components that are periodically added!
         </Description>
@@ -60,7 +60,7 @@ const Home = () => {
 
       {/* Feature Section */}
       <FeatureSection>
-        <FeatureTitle>Key Features</FeatureTitle>
+        <FeatureTitle className="rubik-header">Key Features</FeatureTitle>
         <FeatureList>
           {featuredItems.map((item, index) => (
             <div style={{ margin: "0 20px" }}>
