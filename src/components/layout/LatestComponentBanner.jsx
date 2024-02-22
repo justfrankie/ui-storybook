@@ -26,6 +26,7 @@ const LatestComponentBanner = ({
           See the latest added{" "}
           <span
             style={{ borderBottom: "1px solid white", cursor: "pointer" }}
+            className="rubik-header"
             onClick={handleLatestComponentClick}
           >
             component

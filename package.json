@@ -1,6 +1,6 @@
 {
   "homepage": "https://justfrankie.github.io/ui-storybook",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
