@@ -18,7 +18,7 @@ const MainWindow = ({ currentComponent }) => {
 
   return (
     <div className={styles.container}>
-      {id !== "home" && <h1>{name}</h1>}
+      {id !== "home" && <h1 className={styles.componentHeaderText}>{name}</h1>}
       <div className={styles.componentWrapper}>
         <div className={styles.componentContainer}>
           <Component />

@@ -2,19 +2,24 @@
   padding: 5px;
   margin: 10px;
 }
-
+.componentHeaderText {
+  width: fit-content;
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 60px;
+}
 .hidden {
   display: none;
 }
 
 .componentWrapper {
   max-width: 90%;
-  margin-top: 40px;
+  margin: 40px auto;
   display: flex;
 }
 
 .componentContainer {
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .sourceCodeContainer {
