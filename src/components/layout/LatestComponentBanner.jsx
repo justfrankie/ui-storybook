@@ -34,12 +34,12 @@ const LatestComponentBanner = ({
           !
         </p>
       </div>
-      <div
+      <span
         className={lastComponentStyles["latest-component-close"]}
         onClick={handleBannerClose}
       >
         X
-      </div>
+      </span>
     </div>
   );
 };
