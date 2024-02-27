@@ -4,6 +4,7 @@ body {
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f7fd;
 }
 
 code {
@@ -11,8 +12,6 @@ code {
 }
 
 .mainContainer {
-  width: 100%;
-  background-color: #f2f7fd;
 }
 
 .topNavContainer {
@@ -23,17 +22,13 @@ code {
   display: flex;
 }
 
-.sideNav {
-  background-color: rgb(242 246 253);
-  height: 100vh;
-}
-
 .componentsList {
   list-style: none;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   padding: 3px 5px;
   color: #4e4e4e;
+  height: 100vh;
 }
 
 .mainWindow {
@@ -43,4 +38,11 @@ code {
   border-radius: 10px;
   background-color: white;
   box-shadow: 1px 3px 3px 2px #e7eef4;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
 }

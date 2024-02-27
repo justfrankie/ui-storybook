@@ -1,7 +1,13 @@
+.sideNav {
+  background-color: rgb(242 246 253);
+  height: 100vh;
+}
+
 .container {
   margin: 10px;
-  width: 250px;
+  width: 220px;
   min-width: 35px;
+  transition: width 0.5s ease;
 }
 .condenseButtonContainer {
   display: flex;
@@ -10,6 +16,7 @@
 .condenseButtonContainer:hover {
   cursor: pointer;
 }
+
 .condenseButton {
   margin: 5px auto 5px 0;
   border-radius: 5px;
@@ -23,6 +30,13 @@
 
 .condensed-nav {
   width: 35px !important;
+}
+
+.absolute-nav {
+  position: absolute;
+  z-index: 999;
+  transition: width 0.5s ease;
+  box-shadow: 1px 5px 6px 4px #e7ecf0c2;
 }
 
 .navList {
@@ -51,4 +65,10 @@
 .selectedNav {
   background-color: #d6e3f9;
   border-radius: 8px;
+}
+
+@media only screen and (max-width: 450px) {
+  .sideNav {
+    height: 100vh;
+  }
 }

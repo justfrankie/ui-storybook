@@ -4,7 +4,6 @@
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .leftSection {
@@ -58,4 +57,13 @@
 .topNavItem > a {
   outline: none;
   color: inherit;
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    background-color: #1a2b34;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+  }
 }

@@ -32,3 +32,14 @@
 .closing {
   animation: slideUpFadeOut 0.9s forwards;
 }
+
+@media only screen and (max-width: 450px) {
+  .latest-component-close {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: -25%;
+    display: flex;
+    align-items: center;
+  }
+}

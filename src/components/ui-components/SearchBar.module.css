@@ -52,3 +52,9 @@
   cursor: pointer;
   border-radius: 0;
 }
+
+@media only screen and (max-width: 450px) {
+  .searchBarContainer {
+    width: 100px;
+  }
+}

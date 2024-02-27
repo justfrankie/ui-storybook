@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import InputBar from "./sub-components/InputBar";
 import InputList from "./sub-components/InputList";
-
+import style from "./InputForm.module.css";
 const InputForm = () => {
   const [newTask, setNewTask] = useState({});
   const handleChange = ({ target }) => {
@@ -27,7 +27,7 @@ const InputForm = () => {
   };
 
   return (
-    <div style={{ width: "500px", margin: "0 auto" }}>
+    <div className={style.container}>
       <InputBar
         newTask={newTask}
         handleChange={handleChange}

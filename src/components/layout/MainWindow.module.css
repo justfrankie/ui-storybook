@@ -50,3 +50,9 @@
   cursor: pointer;
   background: #f9fbff;
 }
+
+@media only screen and (max-width: 450px) {
+  .componentWrapper {
+    margin: 40px auto;
+  }
+}
