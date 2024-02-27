@@ -5,7 +5,8 @@
 
 @media only screen and (max-width: 450px) {
   .container {
-    margin: "0 auto";
-    width: 200px;
+    display: flex;
+    margin: 20px auto;
+    width: fit-content;
   }
 }

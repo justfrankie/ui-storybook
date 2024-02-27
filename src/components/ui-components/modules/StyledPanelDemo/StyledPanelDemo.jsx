@@ -1,28 +1,29 @@
 import React from "react";
 import StyledPanel from "../../StyledPanel";
+import styles from "./StyledPanelDemo.module.css";
 
 const StyledPanelDemo = () => {
   return (
     <div>
-      <div style={{ margin: "20px 0" }}>Primary Color:</div>
-      <ul style={{ display: "flex", width: "500px", margin: "10px auto" }}>
+      <div className={styles.margin20}>Primary Color:</div>
+      <ul className={styles.flexContainer}>
         {[1, 2, 3].map((item, index) => (
-          <li style={{ margin: "0 auto" }}>
+          <li className={styles.marginAuto}>
             <StyledPanel>Panel {index + 1}</StyledPanel>
           </li>
         ))}
       </ul>
-      <div style={{ margin: "20px 0" }}>Secondary Color:</div>
-      <ul style={{ display: "flex", width: "500px", margin: "10px auto" }}>
+      <div className={styles.margin20}>Secondary Color:</div>
+      <ul className={styles.flexContainer}>
         {[1, 2, 3].map((item, index) => (
-          <li style={{ margin: "0 auto" }}>
+          <li className={styles.marginAuto}>
             <StyledPanel theme="secondary">Panel {index + 1}</StyledPanel>
           </li>
         ))}
       </ul>
-      <div style={{ margin: "30px auto 0px auto", width: "300px" }}>
+      <div className={styles.margin30}>
         <StyledPanel>
-          <div style={{ margin: "20px auto" }}>
+          <div className={styles.margin20Auto}>
             <h1>Lorem Ipsum?</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting

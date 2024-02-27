@@ -30,7 +30,7 @@
 .versionNumber {
   font-size: 12px;
   /* TODO: make accent color a variable, can we even do that?  */
-  color: rgb(226, 81, 119);
+  color: #d7708b;
 }
 
 .rightSection {
@@ -64,6 +64,6 @@
     background-color: #1a2b34;
     color: #fff;
     padding: 10px;
-    width: 100%;
+    display: flex;
   }
 }

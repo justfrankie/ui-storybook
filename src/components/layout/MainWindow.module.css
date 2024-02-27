@@ -44,6 +44,7 @@
 .sourceCodeButton {
   padding: 5px;
   border-radius: 4px;
+  color: #d7708b;
 }
 
 .sourceCodeButton:hover {
@@ -54,5 +55,18 @@
 @media only screen and (max-width: 450px) {
   .componentWrapper {
     margin: 40px auto;
+    display: block;
+  }
+
+  .componentHeaderText {
+    margin: 0 auto;
+  }
+
+  .sourceCodeWrapper {
+    margin: 10px auto;
+  }
+
+  .sourceCodeContainer {
+    height: fit-content;
   }
 }

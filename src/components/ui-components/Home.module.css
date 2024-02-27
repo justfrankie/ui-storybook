@@ -1,11 +1,9 @@
 /* Home.module.css */
 
 .homeContainer {
-  justify-content: space-between;
 }
 
 .welcomeSection {
-  flex: 1;
   max-width: 600px;
   margin: 10px auto;
 }
