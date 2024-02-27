@@ -46,10 +46,14 @@
 }
 
 .topNavItem {
-  margin: 0 8px;
   cursor: pointer;
   font-size: 12px;
+  padding: 5px 10px;
+  background-color: #3c4659;
+  margin-left: 10px;
+  border-radius: 6px;
 }
+
 .topNavItem:hover {
   color: rgb(226, 81, 119);
 }
@@ -65,5 +69,9 @@
     color: #fff;
     padding: 10px;
     display: flex;
+  }
+
+  .heroTitle {
+    font-size: 13px;
   }
 }

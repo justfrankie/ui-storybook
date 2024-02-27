@@ -8,6 +8,7 @@
   font-weight: 400;
   margin-left: 60px;
 }
+
 .hidden {
   display: none;
 }
@@ -54,7 +55,7 @@
 
 @media only screen and (max-width: 450px) {
   .componentWrapper {
-    margin: 40px auto;
+    margin-top: 20px;
     display: block;
   }
 

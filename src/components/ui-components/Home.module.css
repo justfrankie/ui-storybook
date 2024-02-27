@@ -19,7 +19,6 @@
 }
 
 .featureSection {
-  margin-bottom: 40px;
 }
 
 .featureTitle {
@@ -38,8 +37,6 @@
 }
 
 .featureItem {
-  max-width: 200px;
-  text-align: center;
 }
 
 @media only screen and (max-width: 450px) {

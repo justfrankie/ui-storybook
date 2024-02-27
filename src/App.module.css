@@ -15,7 +15,6 @@ code {
 }
 
 .topNavContainer {
-  width: 100%;
 }
 
 .bottomContainer {
@@ -34,7 +33,6 @@ code {
 .mainWindow {
   width: 80%;
   margin-top: 15px;
-  margin-bottom: 30px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 1px 3px 3px 2px #e7eef4;
@@ -48,5 +46,9 @@ code {
 
   .mainWindow {
     width: 100%;
+  }
+
+  .topNavContainer {
+    width: fit-content;
   }
 }

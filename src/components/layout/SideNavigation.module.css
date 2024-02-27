@@ -35,8 +35,8 @@
 .absolute-nav {
   position: absolute;
   z-index: 999;
-  transition: width 0.5s ease;
-  box-shadow: 1px 5px 6px 4px #e7ecf0c2;
+  transition: position 4s ease;
+  box-shadow: -4px 6px 6px 4px #707273b0;
 }
 
 .navList {
