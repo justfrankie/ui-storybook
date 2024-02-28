@@ -25,7 +25,7 @@
 
 .sourceCodeContainer {
   margin: 5px auto;
-  min-width: max-content;
+  overflow: auto;
   background: rgb(249, 251, 255);
   height: 400px;
   border-radius: 4px;
@@ -69,5 +69,11 @@
 
   .sourceCodeContainer {
     height: fit-content;
+  }
+
+  .sourceCode {
+    overflow: auto;
+    max-width: 250px;
+    max-height: 600px;
   }
 }
