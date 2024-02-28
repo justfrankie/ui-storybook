@@ -39,16 +39,15 @@ code {
 }
 
 @media only screen and (max-width: 450px) {
-  body {
-    width: 100%;
-    margin: 0;
-  }
-
   .mainWindow {
-    width: 100%;
+    height: min-content;
+    box-shadow: 1px 3px 3px 2px #e7eef4;
+    position: absolute;
+    top: 0;
+    left: 13%;
   }
-
-  .topNavContainer {
-    width: fit-content;
+  .bottomContainer {
+    display: flex;
+    position: relative;
   }
 }

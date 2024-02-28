@@ -57,4 +57,10 @@
   .searchBarContainer {
     width: 100px;
   }
+  .searchResultsInput {
+    padding: 8px;
+    border: none;
+    position: relative;
+    width: 100px;
+  }
 }
