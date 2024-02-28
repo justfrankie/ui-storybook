@@ -34,14 +34,12 @@ const App = () => {
         />
       )}
       <div className={appStyles.bottomContainer}>
-        <nav className={appStyles.sideNav}>
-          <SideNavigation
-            componentsList={componentsList}
-            currentComponent={currentComponent}
-            component={currentComponent}
-            setCurrentComponent={setCurrentComponent}
-          />
-        </nav>
+        <SideNavigation
+          componentsList={componentsList}
+          currentComponent={currentComponent}
+          component={currentComponent}
+          setCurrentComponent={setCurrentComponent}
+        />
         <div className={appStyles.mainWindow}>
           <MainWindow currentComponent={currentComponent} />
         </div>

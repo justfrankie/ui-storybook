@@ -1,47 +1,6 @@
 import React from "react";
-import styled from "styled-components";
+import styles from "./Home.module.css";
 import StyledPanel from "./StyledPanel";
-
-const HomeContainer = styled.div`
-  justify-content: space-between;
-`;
-
-const WelcomeSection = styled.div`
-  flex: 1;
-  max-width: 600px;
-  margin: 10px auto;
-`;
-
-const Heading = styled.h1`
-  font-size: 28px;
-`;
-
-const Description = styled.p`
-  font-size: 14px;
-  margin-bottom: 30px;
-  color: #555;
-`;
-
-const FeatureSection = styled.section`
-  margin-bottom: 40px;
-`;
-
-const FeatureTitle = styled.h2`
-  font-size: 20px;
-  margin-bottom: 20px;
-`;
-
-const FeatureList = styled.ul`
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-`;
-
-const FeatureItem = styled.li`
-  max-width: 200px;
-  text-align: center;
-`;
 
 const Home = () => {
   const featuredItems = [
@@ -50,28 +9,30 @@ const Home = () => {
     "Previewable Components",
   ];
   return (
-    <HomeContainer>
-      <WelcomeSection>
-        <Heading className="rubik-bold">Welcome to UI Storybook</Heading>
-        <Description>
+    <div className={styles.homeContainer}>
+      <div className={styles.welcomeSection}>
+        <h1 className={`${styles.heading} rubik-bold`}>
+          Welcome to UI Storybook
+        </h1>
+        <p className={styles.description}>
           Explore the features and components that are periodically added!
-        </Description>
-      </WelcomeSection>
+        </p>
+      </div>
 
       {/* Feature Section */}
-      <FeatureSection>
-        <FeatureTitle className="rubik-header">Key Features</FeatureTitle>
-        <FeatureList>
+      <section className={styles.featureSection}>
+        <h2 className={`${styles.featureTitle} rubik-header`}>Key Features</h2>
+        <ul className={styles.featureList}>
           {featuredItems.map((item, index) => (
-            <div style={{ margin: "0 20px" }}>
+            <div className={styles.featureItemContainer}>
               <StyledPanel theme="primary" key={index}>
-                <FeatureItem>{item}</FeatureItem>
+                <li className={styles.featureItem}>{item}</li>
               </StyledPanel>
             </div>
           ))}
-        </FeatureList>
-      </FeatureSection>
-    </HomeContainer>
+        </ul>
+      </section>
+    </div>
   );
 };
 

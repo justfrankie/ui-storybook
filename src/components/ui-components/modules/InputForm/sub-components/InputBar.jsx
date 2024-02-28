@@ -29,8 +29,8 @@ export default function InputBar({
         onChange={handleChange}
       />
       <span className={inputBarStyles.buttonContainer}>
-        <Button text="Add Task" theme="primary" />
-        <Button text="Clear All" theme="secondary" handleClick={handleReset} />
+        <Button text="Add Task" theme="primary" onClick={handleSubmit} />
+        <Button text="Clear All" theme="secondary" onClick={handleReset} />
       </span>
     </form>
   );

@@ -1,30 +1,32 @@
-.ul {
+.listItemWrapper {
   list-style: none;
   padding: 0;
   text-align: center;
 }
 
-.li {
+.itemContainer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f2f7fd;
   border-radius: 5px;
-  margin: 8px 0;
+  margin-top: 10px;
+  background-color: #f2f6fd;
 }
 
 .content {
   flex: 1;
+  padding: 5px 10px;
 }
 
-.h2 {
-  background-color: #f2f8fd;
-  margin: 0;
+.itemTitle {
+  background-color: #3c4659;
   padding: 4px;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
-.p {
+.itemDescription {
   margin: 8px;
+  font-size: 12px;
 }
 
 .button {

@@ -1,0 +1,30 @@
+.margin20 {
+  margin: 20px 0;
+}
+
+.flexContainer {
+  display: flex;
+  width: 500px;
+  margin: 10px auto;
+}
+
+.marginAuto {
+  margin: 0 auto;
+}
+
+.margin30 {
+  margin: 30px auto 0px auto;
+  width: 300px;
+}
+
+.margin20Auto {
+  margin: 20px auto;
+}
+
+@media only screen and (max-width: 450px) {
+  .flexContainer {
+    display: flex;
+    margin: 10px auto;
+    width: auto;
+  }
+}

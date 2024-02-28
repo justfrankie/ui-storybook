@@ -1,9 +1,6 @@
 html,
 body {
-  height: 100%;
-  background-color: #ffffff;
   text-align: center;
-  margin: 0;
 }
 
 * {
@@ -19,12 +16,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   overflow: hidden;
-}
-
-section {
-  max-height: 80vh;
-  padding: 0 40px 0;
-  margin: 20px;
 }
 
 ul {

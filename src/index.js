@@ -4,6 +4,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./global.css";
+import { MobileProvider } from "./contexts/mobileProvider";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +26,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <MobileProvider>
+      <RouterProvider router={router} />
+    </MobileProvider>
   </React.StrictMode>
 );
 

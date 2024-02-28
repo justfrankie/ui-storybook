@@ -5,12 +5,15 @@ import jsx from "react-syntax-highlighter/dist/esm/languages/prism/jsx";
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useMobile } from "../../contexts/mobileProvider";
+import Button from "../ui-components/Button";
 
 SyntaxHighlighter.registerLanguage("jsx", jsx);
 
 const MainWindow = ({ currentComponent }) => {
   const { id, name, Component, rawJsx } = currentComponent;
-  const [sourceCodeOpen, setSourceCodeOpen] = useState(true);
+  const isMobile = useMobile();
+  const [sourceCodeOpen, setSourceCodeOpen] = useState(isMobile ? false : true);
 
   const handleSourceCodeOpen = () => {
     setSourceCodeOpen(!sourceCodeOpen);
@@ -30,12 +33,15 @@ const MainWindow = ({ currentComponent }) => {
           `}
         >
           {id !== "home" && (
-            <FontAwesomeIcon
-              icon={faCode}
-              className={styles.sourceCodeButton}
+            <Button
               onClick={handleSourceCodeOpen}
-              alt="Button to show Source Code"
-            />
+              theme="secondary"
+              style={{ fontSize: "0.8rem" }}
+            >
+              {sourceCodeOpen ? "Hide" : "Show"}
+              {" Code "}
+              <FontAwesomeIcon icon={faCode} />
+            </Button>
           )}
           {rawJsx && sourceCodeOpen && (
             <div className={styles.sourceCodeContainer}>
@@ -50,6 +56,7 @@ const MainWindow = ({ currentComponent }) => {
                     WebkitOverflowScrolling: "touch",
                   }}
                   wrapLongLines={true}
+                  showLineNumbers={true}
                 >
                   {rawJsx}
                 </SyntaxHighlighter>

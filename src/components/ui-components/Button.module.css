@@ -4,7 +4,7 @@
   margin: 5px 20px;
   color: white;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .primary {
@@ -16,7 +16,7 @@
 }
 
 .secondary {
-  background-color: #f2f6fd;
+  background-color: rgb(249, 251, 255);
   color: rgb(26, 43, 50);
 }
 

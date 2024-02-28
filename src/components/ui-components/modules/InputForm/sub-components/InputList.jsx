@@ -3,13 +3,13 @@ import inputListStyles from "./InputList.module.css";
 
 export default function InputList({ allTasks, handleDelete }) {
   return (
-    <ul className={inputListStyles.ul}>
+    <ul className={inputListStyles.listItemWrapper}>
       {allTasks.map(({ title, description, id }) => (
-        <li key={id} className={inputListStyles.li}>
+        <li key={id} className={inputListStyles.itemContainer}>
           <div className={inputListStyles.content}>
-            <h2 className={inputListStyles.h2}>{title}</h2>
+            <p className={inputListStyles.itemTitle}>{title}</p>
             {!description ? null : (
-              <p className={inputListStyles.p}>{description}</p>
+              <p className={inputListStyles.itemDescription}>{description}</p>
             )}
           </div>
           <button
