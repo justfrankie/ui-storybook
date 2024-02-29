@@ -7,7 +7,6 @@
   margin: 10px;
   width: 220px;
   min-width: 35px;
-  transition: width 0.5s ease;
 }
 .condenseButtonContainer {
   display: flex;
@@ -35,7 +34,7 @@
 .absolute-nav {
   position: absolute;
   z-index: 999;
-  box-shadow: -4px 6px 6px 4px #707273b0;
+  box-shadow: -3px 5px 6px 3px #9ea9aeb0;
 }
 
 .navList {

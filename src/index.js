@@ -22,6 +22,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <h1>Error 404 not found</h1>,
   },
+  {
+    path: "/faqs",
+    element: <h2>Coming Soon</h2>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

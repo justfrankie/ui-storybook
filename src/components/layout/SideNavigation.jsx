@@ -10,6 +10,7 @@ const SideNavigation = ({
   componentsList,
 }) => {
   const isMobile = useMobile();
+  // TODO: change isCondensed to be a global Modal provider state, so SearchBar in top nav can also use it
   const [isCondensed, setIsCondensed] = useState(isMobile ? true : null);
 
   const handleClick = (newData) => {

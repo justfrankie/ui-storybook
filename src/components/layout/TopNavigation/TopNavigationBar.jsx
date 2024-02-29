@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useMobile } from "../../../contexts/mobileProvider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-const topListNav = ["Home", "Docs", "GitHub"];
+const topListNav = ["Home", "FAQs", "GitHub"];
 
 const TopNavigationBar = ({
   currentComponent,
@@ -16,6 +16,11 @@ const TopNavigationBar = ({
   const [searchQuery, setSearchQuery] = useState("");
   const isMobile = useMobile();
 
+  const redirectNavigation = {
+    home: "/",
+    FAQs: "/faqs",
+    github: "https://github.com/justfrankie/ui-storybook",
+  };
   const MobileHamburgerMenu = () => {
     return (
       <div style={{ marginLeft: "15px" }}>
