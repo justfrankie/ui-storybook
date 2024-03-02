@@ -28,17 +28,19 @@ const ImageSelector = () => {
   };
 
   return (
-    <StyledPanel theme="primary">
-      <ImageSlideShow src={src} />
-      <ImageSelectionForms
-        categories={categories}
-        currentCategory={currentCategory}
-        setCurrentCategory={(event) => setCurrentCategory(event.target.value)}
-        resetSelectHandler={resetSelectHandler}
-        isFavorite={isFavorite}
-        favoriteChangeHandler={favoriteChangeHandler}
-      />
-    </StyledPanel>
+    <div style={{ padding: "15px" }}>
+      <StyledPanel theme="primary">
+        <ImageSlideShow src={src} />
+        <ImageSelectionForms
+          categories={categories}
+          currentCategory={currentCategory}
+          setCurrentCategory={(event) => setCurrentCategory(event.target.value)}
+          resetSelectHandler={resetSelectHandler}
+          isFavorite={isFavorite}
+          favoriteChangeHandler={favoriteChangeHandler}
+        />
+      </StyledPanel>
+    </div>
   );
 };
 

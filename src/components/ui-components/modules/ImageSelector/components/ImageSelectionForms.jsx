@@ -21,7 +21,16 @@ const ImageSelectionForms = ({
             margin: "10px auto",
           }}
         >
-          <select value={currentCategory} onChange={setCurrentCategory}>
+          <select
+            value={currentCategory}
+            onChange={setCurrentCategory}
+            style={{
+              border: "1px solid #1a2b32",
+              color: "#1a2b32",
+              borderRadius: "5px",
+              padding: " 5px 10px",
+            }}
+          >
             {categories.map((category, index) => (
               <option key={index} value={category}>
                 {category}
@@ -30,7 +39,11 @@ const ImageSelectionForms = ({
           </select>
           <button
             onClick={() => favoriteChangeHandler(currentCategory)}
-            style={{ border: "none", backgroundColor: "inherit" }}
+            style={{
+              border: "none",
+              backgroundColor: "inherit",
+              margin: "0 5px",
+            }}
           >
             {isFavorite ? "♥" : "♡"}
           </button>
