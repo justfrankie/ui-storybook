@@ -7,6 +7,7 @@ import LoadingSpinnerList from "./components/ui-components/modules/LoadingSpinne
 import MediaDashboard from "./components/ui-components/modules/MediaDashboard/MediaDashboard";
 import GridWrapper from "./components/ui-components/modules/GridWrapper/GridWrapper";
 import StyledPanelDemo from "./components/ui-components/modules/StyledPanelDemo/StyledPanelDemo";
+import ImageRenderer from "./components/ui-components/modules/ImageRenderer/container/ImageRenderer";
 
 const componentsList = [
   {
@@ -40,7 +41,7 @@ const componentsList = [
       <SearchBar
         currentComponent={<div></div>}
         setSearchQuery={() => null}
-        searchQuery={() => null}
+        searchQuery={""}
         setCurrentComponent={() => <div></div>}
         componentsList={[]}
       />
@@ -70,6 +71,12 @@ const componentsList = [
     name: "Styled Panels",
     Component: () => <StyledPanelDemo />,
     rawJsx: `<StyledPanelDemo />`,
+  },
+  {
+    id: "image-renderer",
+    name: "Image Renderer",
+    Component: () => <ImageRenderer />,
+    rawJsx: `<ImageRenderer />`,
   },
 ];
 

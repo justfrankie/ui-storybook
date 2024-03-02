@@ -8,7 +8,7 @@ const StyledPanelDemo = () => {
       <div className={styles.margin20}>Primary Color:</div>
       <ul className={styles.flexContainer}>
         {[1, 2, 3].map((item, index) => (
-          <li className={styles.marginAuto}>
+          <li className={styles.marginAuto} key={index}>
             <StyledPanel>Panel {index + 1}</StyledPanel>
           </li>
         ))}
@@ -16,7 +16,7 @@ const StyledPanelDemo = () => {
       <div className={styles.margin20}>Secondary Color:</div>
       <ul className={styles.flexContainer}>
         {[1, 2, 3].map((item, index) => (
-          <li className={styles.marginAuto}>
+          <li className={styles.marginAuto} key={index}>
             <StyledPanel theme="secondary">Panel {index + 1}</StyledPanel>
           </li>
         ))}
