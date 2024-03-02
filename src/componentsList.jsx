@@ -7,7 +7,7 @@ import LoadingSpinnerList from "./components/ui-components/modules/LoadingSpinne
 import MediaDashboard from "./components/ui-components/modules/MediaDashboard/MediaDashboard";
 import GridWrapper from "./components/ui-components/modules/GridWrapper/GridWrapper";
 import StyledPanelDemo from "./components/ui-components/modules/StyledPanelDemo/StyledPanelDemo";
-import ImageRenderer from "./components/ui-components/modules/ImageRenderer/container/ImageRenderer";
+import ImageSelector from "./components/ui-components/modules/ImageSelector/container/ImageSelector";
 
 const componentsList = [
   {
@@ -73,10 +73,20 @@ const componentsList = [
     rawJsx: `<StyledPanelDemo />`,
   },
   {
-    id: "image-renderer",
-    name: "Image Renderer",
-    Component: () => <ImageRenderer />,
-    rawJsx: `<ImageRenderer />`,
+    id: "image-selector",
+    name: "Image Selector",
+    Component: () => <ImageSelector />,
+    rawJsx: `<StyledPanel theme="primary">
+    <ImageSlideShow src={src} />
+    <ImageSelectionForms
+      categories={categories}
+      currentCategory={currentCategory}
+      setCurrentCategory={(event) => setCurrentCategory(event.target.value)}
+      resetSelectHandler={resetSelectHandler}
+      isFavorite={isFavorite}
+      favoriteChangeHandler={favoriteChangeHandler}
+    />
+  </StyledPanel>`,
   },
 ];
 
