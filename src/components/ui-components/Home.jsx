@@ -24,8 +24,8 @@ const Home = () => {
         <h2 className={`${styles.featureTitle} rubik-header`}>Key Features</h2>
         <ul className={styles.featureList}>
           {featuredItems.map((item, index) => (
-            <div className={styles.featureItemContainer}>
-              <StyledPanel theme="primary" key={index}>
+            <div className={styles.featureItemContainer} key={index}>
+              <StyledPanel theme="primary">
                 <li className={styles.featureItem}>{item}</li>
               </StyledPanel>
             </div>

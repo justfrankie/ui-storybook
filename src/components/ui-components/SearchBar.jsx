@@ -4,7 +4,7 @@ import searchBarStyles from "./SearchBar.module.css";
 const SearchBar = ({
   setSearchQuery,
   setCurrentComponent,
-  searchQuery,
+  searchQuery = "",
   componentsList,
 }) => {
   const [searchResultsOpen, setSearchResultsOpen] = useState(false);

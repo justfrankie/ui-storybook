@@ -6,8 +6,9 @@ const gridItems = ["item 1", "item 2", "item3", "item4", "item5", "item6"];
 function GridWrapper() {
   return (
     <GridLayoutWrapper>
-      {gridItems.map((gridItems) => (
+      {gridItems.map((gridItems, index) => (
         <li
+          key={index}
           style={{
             listStyle: "none",
             border: "1px solid #d0d6dd",
