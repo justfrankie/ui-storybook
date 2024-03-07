@@ -49,3 +49,11 @@ ul {
   border-radius: 3px;
   color: rgb(155, 155, 155);
 }
+
+@media only screen and (max-width: 450px) {
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: scroll;
+  }
+}
