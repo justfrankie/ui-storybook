@@ -63,4 +63,7 @@
     position: relative;
     width: 100px;
   }
+  .searchResultsContainer {
+    width: -webkit-fill-available;
+  }
 }
