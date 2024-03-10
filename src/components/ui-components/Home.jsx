@@ -15,7 +15,8 @@ const Home = () => {
           Welcome to UI Storybook
         </h1>
         <p className={styles.description}>
-          Explore the features and components that are periodically added!
+          Explore this visual library of UI components to see how they can fit
+          into your application.
         </p>
       </div>
 
