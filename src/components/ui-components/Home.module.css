@@ -9,13 +9,37 @@
 }
 
 .heading {
-  font-size: 28px;
+  font-size: 40px;
+  display: inline-block;
+  color: transparent;
+  /* background-image: linear-gradient(
+    74deg,
+    rgb(165 220 250) 0px,
+    rgb(200 110 200) 9%,
+    rgb(217, 101, 112) 20%,
+    rgb(217, 101, 112) 24%,
+    rgb(155, 114, 203) 35%,
+    rgb(66, 133, 244) 44%,
+    rgb(155, 114, 203) 50%,
+    rgb(196 55 242) 56%,
+    rgb(255, 255, 255) 75%,
+    rgb(255, 255, 255) 100%
+  ); */
+  background-image: linear-gradient(
+    72deg,
+    rgb(219 154 219),
+    #7cffe9,
+    rgb(46 164 255)
+  );
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .description {
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 30px;
-  color: #555;
+  color: #7082a4;
 }
 
 .featureSection {
@@ -24,6 +48,7 @@
 .featureTitle {
   font-size: 20px;
   margin-bottom: 20px;
+  color: #3c4659;
 }
 
 .featureList {
