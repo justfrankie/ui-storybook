@@ -4,9 +4,9 @@ import styles from "./ButtonList.module.css";
 const ButtonList = () => {
   return (
     <div className={styles.container}>
-      <Button text="Style One" theme="primary" />
-      <Button text="Style One" theme="secondary" />
-      <Button text="Style One" theme="accent" />
+      <Button text="Primary" theme="primary" />
+      <Button text="Secondary" theme="secondary" />
+      <Button text="Accent" theme="accent" />
     </div>
   );
 };
