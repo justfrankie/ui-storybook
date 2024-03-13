@@ -24,7 +24,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/faqs",
-    element: <h2>Coming Soon</h2>,
+    element: <h2 style={{ marginTop: "50px" }}>Coming Soon</h2>,
   },
 ]);
 
