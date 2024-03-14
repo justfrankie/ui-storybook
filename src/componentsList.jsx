@@ -20,19 +20,40 @@ const componentsList = [
     id: "button",
     name: "Button",
     Component: () => <ButtonList />,
-    rawJsx: `<ButtonList />`,
+    rawJsx: `
+    <Button
+    text="Primary"
+    theme="primary"
+    />
+    <Button
+    text="Secondary"
+    theme="secondary"
+    />
+    <Button
+    text="Accent"
+    theme="accent"
+    />`,
   },
   {
     id: "input-form",
     name: "Input Form",
     Component: () => <InputForm />,
-    rawJsx: `<InputForm />`,
+    rawJsx: `<InputForm
+    addItem={addItem}
+    handleSubmit={handleSubmit}
+    handleDelete={handleDelete}
+    handleReset={handleReset}
+    />`,
   },
   {
     id: "loading-spinner",
     name: "Loading Spinner",
     Component: () => <LoadingSpinnerList />,
-    rawJsx: `<LoadingSpinnerList />`,
+    rawJsx: `<LoadingSpinner/>
+    <LoadingSpinner
+    size="small"
+    text="Loading Text"
+    />`,
   },
   {
     id: "search-bar",
@@ -47,11 +68,11 @@ const componentsList = [
       />
     ),
     rawJsx: `<SearchBar
-        currentComponent={<div></div>}
-        setSearchQuery={() => null}
-        searchQuery={() => null}
-        setCurrentComponent={() => <div></div>}
-        componentsList={[]}
+        currentComponent={Component}
+        setSearchQuery={setSearchQuery}
+        searchQuery={searchQuery}
+        setCurrentComponent={setCurrentComponent}
+        componentsList={componentsList}
       />`,
   },
   {
@@ -64,13 +85,24 @@ const componentsList = [
     id: "grid-wrapper",
     name: "Responsive Grid Wrapper",
     Component: () => <GridWrapper />,
-    rawJsx: `<GridWrapper />`,
+    rawJsx: `<GridWrapper>
+    {children}
+    </GridWrapper>`,
   },
   {
     id: "styled-panel",
     name: "Styled Panels",
     Component: () => <StyledPanelDemo />,
-    rawJsx: `<StyledPanelDemo />`,
+    rawJsx: `<StyledPanel theme="primary">Panel 1</StyledPanel>
+    <StyledPanel theme="primary">Panel 2</StyledPanel>
+    <StyledPanel theme="primary">Panel 3</StyledPanel>
+    
+    <StyledPanel theme="secondary">Panel 1</StyledPanel>
+    <StyledPanel theme="secondary">Panel 2</StyledPanel>
+    <StyledPanel theme="secondary">Panel 3</StyledPanel>
+    
+    <StyledPanel><p>Lorem Ipsum is...</p></StyledPanel>
+    `,
   },
   {
     id: "image-selector",
