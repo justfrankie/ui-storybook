@@ -18,7 +18,7 @@ const TopNavigationBar = ({
 
   const redirectNavigation = {
     home: "/",
-    FAQs: "/faqs",
+    faqs: "/faqs",
     github: "https://github.com/justfrankie/ui-storybook",
   };
   const MobileHamburgerMenu = () => {
@@ -61,7 +61,15 @@ const TopNavigationBar = ({
               <ul className={topNavStyles.topNavItems}>
                 {topListNav.map((item, index) => (
                   <li key={index} className={topNavStyles.topNavItem}>
-                    <Link to={`/${item.toLowerCase()}`}>{item}</Link>
+                    <Link
+                      to={redirectNavigation[item.toLowerCase()]}
+                      target={item.toLowerCase() === "github" && "_blank"}
+                      rel={
+                        item.toLowerCase() === "github" && "noopener noreferrer"
+                      }
+                    >
+                      {item}
+                    </Link>
                   </li>
                 ))}
               </ul>
